@@ -34,14 +34,16 @@
       <button>Ajouter Todo</button>
     </form>
     <TodosMenu />
+    <HeathCheck />
   </div>
 </template>
 
 <script>
 import TodosMenu from '../components/TodosMenu'
+import HeathCheck from '../components/HeathCheck'
 export default {
   name: 'TodosForm',
-  components: { TodosMenu },
+  components: { HeathCheck, TodosMenu },
   data () {
     return {
       error: false,

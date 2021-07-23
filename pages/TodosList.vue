@@ -2,14 +2,16 @@
   <div>
     <p>Coucou voici la list</p>
     <TodosMenu />
+    <HeathCheck />
   </div>
 </template>
 
 <script>
 import TodosMenu from '../components/TodosMenu'
+import HeathCheck from '../components/HeathCheck'
 export default {
   name: 'TodosList',
-  components: { TodosMenu },
+  components: { HeathCheck, TodosMenu },
   props: ['todos'],
   data () {
     return {
